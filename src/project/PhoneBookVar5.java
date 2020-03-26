@@ -2,7 +2,9 @@ package project;
 
 
 import java.util.Scanner;
-import project_ver04.*;
+
+import project_ver05.Menultem;
+import project_ver05.PhoneBookManager;
 
 
 
@@ -36,23 +38,23 @@ import project_ver04.*;
 				scanner.nextLine();
 
 				switch(choice) {
-				case 1: 
+				case Menultem.INPUT: 
 					System.out.println("데이터 입력을 시작합니다.\n"
 							+"1.일반, 2.동창, 3.회사1");
 						Scanner scan =new Scanner(System.in);
-						int num = scan.nextInt();
+				int num = scan.nextInt();
 					manage.dateInput1(num); //입력
 					break;
-				case 2:  
+				case Menultem.SEARCH:  
 					manage.dataSearch();//검색
 					break;
-				case 3: 
+				case Menultem.DELETE:
 					manage.deleteInfo();//삭제
 					break;
-				case 4: 
+				case Menultem.SHOW: 
 					manage.dataAllShow();//전체 검색 
 					break;
-				case 5: 
+				case Menultem.BYE: 
 					System.out.println("프로그램을 종료합니다.");
 				return;
 					

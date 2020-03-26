@@ -27,13 +27,16 @@ public class PhoneBookManager{
 		System.out.println("전화번호:");iPhone =scan.nextLine();//넣고 바로 System.out.print로 
 		System.out.println("주소:");iAdder= scan.nextLine();// 불름 
 
-		if(choice==1) {
+	
+		
+		
+			if(choice==SubMenultem.BASIC) {
 			PhoneInfo phone= new PhoneInfo(iName, iPhone, iAdder);
 			info[numOfinfo++] = phone;
 			System.out.println("데이터 입력이 완료되었습니다.");
 			
 		}
-		else if(choice==2) {//동창정보 
+		else if(choice==SubMenultem.SCHOOL) {//동창정보 
 			System.out.print("전공:"); major=scan.nextLine();
 			System.out.print("학번:"); school=scan.nextInt();
 			PhoneSchoolInfo sch = new PhoneSchoolInfo(iName, iPhone, iAdder,major,school);
@@ -41,7 +44,7 @@ public class PhoneBookManager{
 			System.out.println("동창친구정보가 입력이 완료되었습니다.");
 			
 		}
-		else if(choice==3) {//회사정보 
+		else if(choice==SubMenultem.COMPANY) {//회사정보 
 			System.out.print("회사:"); company = scan.nextLine();
 			PhoneCompanyInfo com = new PhoneCompanyInfo(iName, iPhone,
 					iAdder, company);
