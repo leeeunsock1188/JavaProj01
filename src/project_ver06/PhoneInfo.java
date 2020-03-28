@@ -1,6 +1,7 @@
-package project_ver03;
+package project_ver06;
 
-public class PhoneInfo { //DTO 
+public class PhoneInfo {
+	//멤버변수
 	String name; //이름
 	String phoneNumber; //전화번호 
 	String address; //주소

@@ -1,4 +1,4 @@
-package project_ver05;
+package project_ver06;
 
 public class PhoneSchoolInfo extends PhoneInfo{
 	
@@ -16,11 +16,13 @@ public class PhoneSchoolInfo extends PhoneInfo{
 	@Override
 	public void showPhoneInfo() {
 		System.out.println("==동창정보(전체정보)");
-
+		super.showPhoneInfo();
 		System.out.println("전공:"+major);
 		System.out.println("학년:"+school);
 	}
 
 	
-
+	
+	
+	
 }
