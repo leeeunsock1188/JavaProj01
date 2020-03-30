@@ -2,7 +2,7 @@ package project;
 
 import project_ver01.PhoneInfo;
 
-public class PhoneBookVar01 {
+public class PhoneBookVar1 {
 
 	public static void main(String[] args) {
 		

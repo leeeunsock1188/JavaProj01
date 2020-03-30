@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import project_ver02.PhoneInfo;
 
-public class PhoneBookVar02 {
+public class PhoneBookVar2 {
 
 	public static void startaddress() {
 
